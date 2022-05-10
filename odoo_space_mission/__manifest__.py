@@ -14,6 +14,7 @@
     ],
 
     'demo': [
+        'demo/spaceship_demo.xml'
     ],
 
 }
