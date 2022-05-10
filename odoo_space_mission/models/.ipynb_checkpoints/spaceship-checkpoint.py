@@ -8,7 +8,7 @@ class SpaceShip(models.Model):
     
     model = fields.Char("Spaceship Model")
     description = fields.Text("Description")
-    crew_type = fields.Selection("Crew Type", selection=[('small', 'Small Crew'),
+    crew_type = fields.Selection(string="Crew Type", selection=[('small', 'Small Crew'),
                                                          ('medium', 'Medium Crew'),
                                                          ('large', 'Large Crew')])
     crew_size = fields.Integer("Nr of people in crew")
