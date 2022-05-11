@@ -4,7 +4,7 @@
         <field name="name">SpaceShip / Admin</field>
     </record>
 
-    <record id="group_space_ship_space_crew" model="res.groups">
+    <record id="group_space_ship_crew" model="res.groups">
         <field name="name">SpaceShip / Crew</field>
     </record>
 
