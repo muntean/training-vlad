@@ -3,18 +3,20 @@
 
     'author': "My Company",
     'website': "http://www.yourcompany.com",
-    'category': 'Uncategorized',
+    'category': 'Something',
     'version': '0.1',
+    'license': 'LGPL-3',
 
    
-    'depends': ['base'],
+    'depends': ['base',],
 
     
     'data': [
+        'security/spaceship_security.xml',
+        'security/ir.model.access.csv',
     ],
 
     'demo': [
         'demo/spaceship_demo.xml'
     ],
-
 }

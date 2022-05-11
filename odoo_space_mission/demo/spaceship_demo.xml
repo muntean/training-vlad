@@ -1,37 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<odoo>
-    
-    <data>
-        
-        <record model="space.ship" id="space.ship.S240StarFry">
-            <field name="name">S240StarFry</field>
-            <field name="description">
-                This spaceship can hold up to 6 people.
-            </field>
+<odoo>    
+    <data noupdate="1">        
+        <record model="space.ship" id="space_ship_SX200">
+            <field name="model">SX200</field>
             <field name="crew_type">small</field>
             <field name="crew_size">5</field>
         </record>
-        
-        <record model="space.ship" id="space.ship.L900X">
-            <field name="name">L900X</field>
-            <field name="description">
-                This spaceship can hold up to 15 people.
-            </field>
-            <field name="crew_type">large</field>
-            <field name="crew_size">11</field>
-        </record>
-        
-        <record model="space.ship" id="space.ship.L900XF">
-            <field name="name">L900XF</field>
-            <field name="description">
-                This spaceship can hold up to 15 people.
-            </field>
-            <field name="crew_type">large</field>
-            <field name="crew_size">14</field>
-        </record>
-        
-    </data>
-    
-    
+    </data>   
 </odoo>
