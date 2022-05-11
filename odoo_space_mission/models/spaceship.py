@@ -4,6 +4,7 @@ from odoo import models, fields
 class SpaceShip(models.Model):
     _name = "space.ship"
     _description = "An aircraft that can go to the moon"
+    _rec_name = "model"
 
     model = fields.Char("Spaceship Model")
     description = fields.Text("Description")
