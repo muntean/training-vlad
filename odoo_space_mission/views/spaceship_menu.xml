@@ -14,7 +14,8 @@
 
     <menuitem id="space_mission_main_menu"
               sequence="1"
-              name="Odoo Space Mission"/>
+              name="Odoo Space Mission"
+              web_icon="odoo_space_mission,static/description/icon.png"/>
 
     <menuitem id="space_mission_sub_1"
               sequence="1"
