@@ -11,6 +11,8 @@
                         <group>
                             <field name="crew_type"/>
                             <field name="crew_size"/>
+                            <field name="width"/>
+                            <field name="length"/>
                         </group>
                         <group>
                             <field name="active"/>
