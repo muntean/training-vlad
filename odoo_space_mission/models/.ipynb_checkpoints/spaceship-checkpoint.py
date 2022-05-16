@@ -18,6 +18,8 @@ class SpaceShip(models.Model):
     width = fields.Float("Width")
     length = fields.Float("Length")
     
+    space_mission_ids = fields.One2many("space.mission", "spaceship_id", string="Space Missions")
+    
     @api.constrains('width', 'length')
     def _check_width_less_than_length(self):
         for item in self:
