@@ -23,6 +23,9 @@
                         <page string="Crew">
                             <field name="crew_ids"/>
                         </page>
+                        <page string="Crew2">
+                            <field name="crew2_ids"/>
+                        </page>
                     </notebook>
                 </sheet>
                 
