@@ -11,8 +11,7 @@ class SpaceMission(models.Model):
     
     spaceship_id = fields.Many2one("space.ship", "Spaceship")
     
-    crew_ids = fields.One2many("res.partner", "space_mission_id", string="Crew")
-    crew2_ids = fields.Many2many("res.partner", string="Crew2")
+    crew_ids = fields.One2many(comodel_name="res.partner", inverse_name="space_mission_id", string="Crew")
     
     amount_of_fuel_needed = fields.Float(string="Fuel needed(liters)")
     
