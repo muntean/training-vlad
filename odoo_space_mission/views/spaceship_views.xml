@@ -41,7 +41,7 @@
                 <field name="crew_size"/>
             </tree>
         </field>
-    </record>  
+    </record>
     
     <record id="spaceship_view_search" model="ir.ui.view">
         <field name="name">spaceship.view.search</field>

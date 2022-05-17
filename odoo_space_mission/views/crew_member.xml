@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="crew_member_view_form" model="ir.ui.view">
+        <field name="name">crew.member.view.form</field>
+        <field name="model">crew.member</field>
+        <field name="arch" type="xml">
+            <form string="Form view">
+                <sheet>
+                    <group>
+                        <field name="res_partner_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
