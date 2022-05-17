@@ -14,6 +14,7 @@
         'security/ir.model.access.csv',
         'views/spaceship_menu.xml',
         'views/spaceship_views.xml',
+        'views/space_mission_views.xml'
     ],
 
     'demo': [
