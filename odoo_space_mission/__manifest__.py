@@ -7,14 +7,14 @@
     'version': '0.1',
     'license': 'LGPL-3',
 
-    'depends': ['base', 'web_map'],
+    'depends': ['base', 'project'],
 
     'data': [
         'security/spaceship_security.xml',
         'security/ir.model.access.csv',
         'views/spaceship_menu.xml',
         'views/spaceship_views.xml',
-        'views/space_mission_views.xml'
+        'views/space_mission_views.xml',
     ],
 
     'demo': [
