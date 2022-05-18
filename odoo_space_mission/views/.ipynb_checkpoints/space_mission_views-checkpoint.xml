@@ -12,6 +12,7 @@
                         <group>
                             <field name="start_date"/>
                             <field name="end_date"/>
+                            <field name="space_mission_location"/>
                         </group>
                         <group>
                             <field name="spaceship_id"/>
@@ -53,6 +54,15 @@
                 <field name="number_of_engines" type="measure"/>
             </graph>
         </field>        
+    </record>
+    
+    <record id="space_mission_view_map" model="ir.ui.view">
+        <field name="name">space.mission.view.map</field>
+        <field name="model">space.mission</field>
+        <field name="arch" type="xml">
+            <map res_partner="space_mission_location">
+            </map>
+        </field>
     </record>
     
 </odoo>

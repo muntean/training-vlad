@@ -17,3 +17,5 @@ class SpaceMission(models.Model):
     
     number_of_engines = fields.Integer("Number of engines")
     
+    space_mission_location = fields.Many2one("res.partner", string="Location")
+    
