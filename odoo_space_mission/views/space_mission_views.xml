@@ -32,6 +32,9 @@
                                 </tree>
                             </field>
                         </page>
+                        <page string="Projects">
+                            <field name="project_ids"/>
+                        </page>
                     </notebook>
                 </sheet>
                 

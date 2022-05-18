@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="project_view_form_inherited_odoo_space_mission" model="ir.ui.view">
+        <field name="name">project.view.form.iherited.odoo.space.mission</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='tag_ids']" position="after">
+                <field name="is_space_project"/>
+                <field name="space_mission_id"/>                
+            </xpath>
+        </field>
+    </record> 
+</odoo>

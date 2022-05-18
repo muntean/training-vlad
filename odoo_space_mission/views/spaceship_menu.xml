@@ -23,6 +23,13 @@
         </field>
         
     </record>
+    
+    <record id="action_view_mission_projects" model="ir.actions.act_window">
+        <field name="name">Mission Projects</field>
+        <field name="res_model">project.project</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="domain">[('is_space_project','=',True)]</field>
+    </record>
 
     <menuitem id="space_mission_main_menu"
               sequence="1"
@@ -45,4 +52,10 @@
               name="Missions"
               parent="space_mission_sub_1"
               action="action_view_space_missions"/>
+    
+    <menuitem id="space_mission_projects"
+              sequence="2"
+              name="Projects"
+              parent="space_mission_main_menu"
+              action="action_view_mission_projects"/>
 </odoo>
