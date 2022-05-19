@@ -3,7 +3,6 @@ from odoo import http
 
 class SpaceMission(http.Controller):
     
-    
     @http.route("/odoo_space/", website=True)
     def index(self):
         return "Odoo Space Mission"
