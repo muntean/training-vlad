@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="all_missions_website">
+        <t t-call="website.layout">
+            <t t-set="title">Missions</t>
+            <div class="oe_structure">
+                <div class="container">
+                    <h1 style="text-aling: center;">Here you can see all the space missions of Odoo Space</h1>
+                    <t t-foreach="missions" t-as="mission">
+                        <div class="row justify-content-center">
+                            <h3 t-field="mission.name"/>
+                        </div>
+                        <div class="row justify-content-center">
+                            <span>Start date: <span t-field="mission.start_date"/></span>
+                        </div>
+                        <div class="row justify-content-center">
+                            <span>End date: <span t-field="mission.end_date"/></span>
+                        </div>
+                        <div class="row justify-content-center">
+                            <p>Spacheship:
+                                <a t-attf-href="/odoo_space/{{ slug(mission.spaceship_id) }}">
+                                    <span t-field="mission.spaceship_id.model"/>
+                                </a>
+                            </p>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+    
+    <template id="spaceship_website">
+        <t t-call="website.layout">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <h2 t-field="spaceship.model"/>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

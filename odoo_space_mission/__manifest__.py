@@ -18,6 +18,7 @@
         'views/project_project.xml',
         'wizard/create_project_views.xml',
         'reports/spaceship_missions_report.xml',
+        'views/website_templates.xml',
     ],
 
     'demo': [
