@@ -7,6 +7,7 @@
         <field name="report_file">odoo_space_mission.report_spaceship_missions</field>
         <field name="report_name">odoo_space_mission.report_spaceship_missions_document</field>
         <field name="binding_type">report</field>
+        <field name="binding_model_id" ref="model_space_ship"/>
     </record>
     
     <template id="report_spaceship_missions_document">
@@ -52,10 +53,8 @@
                                         <td t-if="mission.end_date" name="td_end_date">
                                             <span t-field="mission.end_date"/>
                                         </td>
-                                        <td name="td_start_date">
-                                            <t t-foreach="mission.crew_ids" t-as_size="size">
-                                                <span t-esc="size"/>
-                                            </t>
+                                        <td name="td_crew_size">
+                                            <span t-esc="len(mission.crew_ids)"/>
                                         </td>
                                     </tr>
                                 </t>
