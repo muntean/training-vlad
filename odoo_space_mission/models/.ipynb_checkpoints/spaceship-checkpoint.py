@@ -1,4 +1,4 @@
-from odoo import models, fields, api
+from odoo import models, fields, api, _
 from odoo.exceptions import UserError
 
 
@@ -24,4 +24,4 @@ class SpaceShip(models.Model):
     def _check_width_less_than_length(self):
         for item in self:
             if item.width > item.length:
-                raise UserError('The aircraft width cannot be bigger than the length!')
+                raise UserError(_('The aircraft width cannot be bigger than the length!'))
